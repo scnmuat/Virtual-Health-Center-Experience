@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-tofit=no" />
+    <title> Health Sheet/>
+        <link rel="stylesheet" href="bootstrap.min.css" />
+
+</head>
+
+<body>
+    <div class="dynamic-table">
+        <div class="row clearfix">
+            <table class="table table-bordered table-hover dynamic-table-tab_logic">
+                <thread>
+                    <tr>
+                        <th class="text-center">#(Condition)</th>
+                        <th class="text-center">Full Name(Yes)</th>
+                        <th class="text-center">Social Security(Date of onset)</th>
+                        <th class="text-center">Date of Birth(Condition)</th>
+                        <th class="text-center">Realtion to Applicant(Yes)</th>
+                        <th class="text-center">Date of Onset</th>
+
+                    </tr>
+                </thread>
+                <tbody>
+                    <tr class="dynamic-table-addr0" style="display:none; ">
+                        <td>
+                            <input class="form-control" name="name0" placeholder="Name" type="text" />
+                        </td>
+                        <td>
+                            <input class="form-control" name="mail0" placeholder="SSN" type="text" />
+                        </td>
+                        <td>
+                            <div class="md-form">
+                                <input placeholder="Selected date" type="text" id="date-picker-example" class="form-control datepicker">
+                                <label for="date-picker-example">Try me...</label>
+                            </div>
+                        </td>
+                        <td>
+                            <input class="form-control" name="mail0" placeholder="SSN" type="text" />
+                        </td>
+                        <td>
+                            <input class="form-control" name="mail0" placeholder="SSN" type="text" />
+                        </td>
+                        <td>
+                            <input class="datetimepicker form-control" name="dateofbirth" placeholder="Date of Onset" type="text" />
+                        </td>
+                    </tr>
+                    <tr class="dynamic-table-addr1"></tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <a class="dynamic-tablle-add_row btn btn-dafault pull-left">Add Row</a>
+    <a class="dynamic-table-delete_row pull-right btn btn-defaults">Delete Row</a>
+
+</body>
+
+</html>
