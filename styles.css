@@ -1,30 +1,68 @@
 
-
+*{
+  margin: 0;
+  padding: 0;
+}
+.ulsidebar
+{
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  line-height: 60px;
+  background-color: aqua;
+}
+.lisidebar
+{
+  display: block;
+  width: 100%;
+}
+ul li a
+{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: azure;
+  transition: transform 1s ease-in-out;
+}
+ul li a:hover
+{
+  transform: translate(30%,0);
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.sidebardiv
+{
+  width: 30%;
+  position: fixed;
+  background-color: rgba(222, 255, 209, 0.8);
+}
+.mainbodydiv
+{
+  position: relative;
+  float: right;
+  width: 70%;
+}
 .grid-container {
   display: inline-grid;
-  width: 100vw;
   /*height: 100vw;*/
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
   background-color: rgba(195, 232, 214, .4);
   border: 1px solid rgba(46, 101, 70, .6);
   padding: 10px;
-  /*grid-row-end: -1;*/
+  width: 70%;
 }
 
 .grid-item {
+  grid-template-rows: auto auto auto auto;
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0px 1px rgba(46, 101, 70, .6),
               1px 2px rgba(46, 101, 70, .3),
               2px 3px rgba(46, 101, 70, .2),
               3px 4px rgba(46, 101, 70, .1);
   border: 1px solid rgba(46, 101, 70, .6);
-  padding: 20px;
+  padding: 0px;
   font-size: medium;
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin-left: 3em;
 }
 
 h1 {
@@ -71,7 +109,7 @@ h3{
 .Anthropometrics-container
 {
   display: inline-grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0px 1px rgba(46, 101, 70, .6),
               1px 2px rgba(46, 101, 70, .3),
@@ -81,8 +119,6 @@ h3{
   padding: 20px;
   font-size: medium;
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
 }
 .Anthropometrics-item
 {
@@ -97,18 +133,33 @@ h3{
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
 }
 .Anthropometrics
 {
   text-align: left;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  display: inline-table;
 }
 .Demographics
 {
   text-align: left;
   display: inline-block;
-
 }
+.grid-medical
+{
+  grid-template-rows: auto auto auto auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 1px rgba(46, 101, 70, .6),
+              1px 2px rgba(46, 101, 70, .3),
+              2px 3px rgba(46, 101, 70, .2),
+              3px 4px rgba(46, 101, 70, .1);
+  border: 1px solid rgba(46, 101, 70, .6);
+  padding: 0px;
+  font-size: medium;
+  text-align: center;
+}
+ul
+{
+  list-style-type: none;
+}
+
