@@ -169,7 +169,7 @@ h3{
   padding: 10px;
   width: 100%;
 }
-ul
+ul,ol
 {
   list-style-type: none;
 }
