@@ -70,9 +70,9 @@ ul li a:hover
   grid-template-rows: auto auto auto auto;
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 1px 2px rgba(255, 255, 255, 0.6),
-              3x 4px rgba(255, 255, 255, 0.3),
+              3x 4px rgba(255, 255, 255, 0.3);
 
-border: 1px solid rgba(44, 65, 110, 1);
+  border: 1px solid rgba(44, 65, 110, 1);
   padding: 0px;
   font-size: medium;
   text-align: center;
