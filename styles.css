@@ -2,25 +2,33 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+
 }
-.logo
+form
 {
+  padding: 10px;
+}
+.img{
   height: 100%;
   width: 100%;
-  
+  object-fit: contain;
 }
 .ulsidebar
 {
   list-style-type: none;
   width: 100%;
   height: 100%;
-  line-height: 60px;
+  line-height: 40px;
   background-color: rgba(46, 101, 70, .6);
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  color: white;
 }
 .lisidebar
 {
   display: block;
   width: 100%;
+  background-color: rgba(222, 255, 209, 0.8);
 }
 ul li a
 {
@@ -28,7 +36,6 @@ ul li a
   text-align: center;
   text-decoration: none;
   color: azure;
-  
 }
 
 ul li a:hover
@@ -46,15 +53,18 @@ ul li a:hover
 
 .sidebardiv
 {
-  width: 30%;
+  padding: 5px;
+  object-fit: contain;
+  width: 20%;
   position: fixed;
-  background-color: rgba(222, 255, 209, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
+  flex-direction: row;
 }
 .mainbodydiv
 {
   position: relative;
   float: right;
-  width: 70%;
+  width: 80%;
 }
 .grid-container {
   display: inline-grid;
@@ -67,15 +77,15 @@ ul li a:hover
 }
 
 .grid-item {
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto auto auto;
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 1px 2px rgba(255, 255, 255, 0.6),
               3x 4px rgba(255, 255, 255, 0.3);
 
   border: 1px solid rgba(44, 65, 110, 1);
-  padding: 0px;
+  padding: 10px;
   font-size: medium;
-  text-align: center;
+  text-align: left;
 }
 /* rgba(160, 209, 219, 0.8);  */
 h1 {
@@ -115,10 +125,75 @@ h3{
               3px 4px rgba(46, 101, 70, .1);
 border: 1px solid rgba(44, 65, 110, 1);
 }
-.address
+.patient-information-grid-item
 {
-  align-self: stretch;
+  display: inline-block;
+  grid-template-columns: 1;
+  grid-template-rows: auto auto auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 1px 2px rgba(255, 255, 255, 0.6),
+              3x 4px rgba(255, 255, 255, 0.3);
+
+  border: 1px solid rgba(44, 65, 110, 1);
+  padding: 10px;
 }
+.addresswrapper
+{
+  padding: 10px;
+  grid-template-areas: 
+  "fname mname lname"
+  "address address address"
+  "city state zipcode"
+  " . email phone";
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 50px 50px 50px;
+
+}
+#address
+{
+  box-sizing: border-box;
+  width:100%;
+}
+.addresswrapper > .addresswrapper > fname {
+  grid-area: fname;
+  width:100%;
+}
+.addresswrapper > .mname {
+  grid-area: mname;
+  width:100%;
+}
+.addresswrapper > .lname {
+  grid-area: lname;
+  width:100%;
+}
+.addresswrapper > .address {
+  grid-area: address;
+  width:100%;
+}
+.addresswrapper > .city {
+  grid-area: city;
+  width:100%;
+}
+
+.addresswrapper > .state {
+  grid-area: state;
+  width:100%;
+}
+
+.addresswrapper > .zipcode {
+  grid-area: zipcode;
+  width:100%;
+}
+.addresswrapper > .email {
+  grid-area: email;
+  width:100%;
+}
+.addresswrapper > .phone {
+  grid-area: phone;
+  width:100%;
+}
+
 .Anthropometrics-container
 {
   width: 98%;
@@ -141,7 +216,7 @@ border: 1px solid rgba(44, 65, 110, 1);
               1px 2px rgba(46, 101, 70, .3),
               2px 3px rgba(46, 101, 70, .2),
               3px 4px rgba(46, 101, 70, .1);
-border: 1px solid rgba(44, 65, 110, 1);
+  border: 1px solid rgba(44, 65, 110, 1);
   padding: 20px;
   font-size: medium;
   text-align: center;
@@ -200,4 +275,41 @@ ul,ol
   font-size: medium;
   text-align: center;
 }
+.social-history-container
+{
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 1px rgba(46, 101, 70, .6),
+              1px 2px rgba(46, 101, 70, .3),
+              2px 3px rgba(46, 101, 70, .2),
+              3px 4px rgba(46, 101, 70, .1);
+  border: 1px solid rgba(44, 65, 110, 1);
+  padding: 20px;
+  font-size: medium;
+  text-align: center;
+}
+.social-history-item
+{
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 1px rgba(46, 101, 70, .6),
+              1px 2px rgba(46, 101, 70, .3),
+              2px 3px rgba(46, 101, 70, .2),
+              3px 4px rgba(46, 101, 70, .1);
+  border: 1px solid rgba(44, 65, 110, 1);
+  padding: 20px;
+  font-size: medium;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+label {
+  color: rgb(24, 10, 102);
+  font-weight: bold;
+  display: block;
+  float: left;
+  }
+  label:after { content: ": " }
 
