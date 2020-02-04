@@ -1,4 +1,4 @@
-
+/*                                         GENERAL STYLING SECTION                                                                  */
 *{
   margin: 0;
   padding: 0;
@@ -29,6 +29,43 @@ form
   display: block;
   width: 100%;
   background-color: rgba(222, 255, 209, 0.8);
+}
+h1 {
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.7),
+               0px 1px 2px rgba(255, 255, 255, 0.3),
+               1px 2px 3px rgba(255, 255, 255, 0.3),
+               2px 3px 4px rgba(255, 255, 255, 0.3);
+  background-color:rgba(44, 65, 110, 1); 
+  box-shadow: 1px 2px rgba(255, 255, 255, 0.6),
+              3x 4px rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(0, 247, 194, 0.5);
+  text-align: center;
+}
+h2 {
+  color: rgba(44, 65, 110, 1);
+  text-shadow: 0px 4px 3px rgba(44, 65, 110,.25),
+               0px 8px 13px rgba(44, 65, 110,.5),
+               0px 18px 23px rgba(44, 65, 110,1);
+  background-color: rgba(160, 209, 219, 0.8); 
+  box-shadow: 0px 1px rgba(46, 101, 70, .6),
+              1px 2px rgba(46, 101, 70, .3),
+              2px 3px rgba(46, 101, 70, .2),
+              3px 4px rgba(46, 101, 70, .1);
+  border: 1px solid rgba(44, 65, 110, 1);
+  text-align: center;
+}
+h3{
+  color: rgba(44, 65, 110, 1);
+  text-shadow: 0px 4px 3px rgba(44, 65, 110,.25),
+               0px 8px 13px rgba(44, 65, 110,.5),
+               0px 18px 23px rgba(44, 65, 110,1);
+  background-color: rgba(160, 209, 219, 0.8); 
+  box-shadow: 0px 1px rgba(46, 101, 70, .6),
+              1px 2px rgba(46, 101, 70, .3),
+              2px 3px rgba(46, 101, 70, .2),
+              3px 4px rgba(46, 101, 70, .1);
+  border: 1px solid rgba(44, 65, 110, 1);
 }
 ul li a
 {
@@ -75,55 +112,36 @@ ul li a:hover
   padding: 10px;
   width: 100%;
 }
+/*                                         GENERAL STYLING SECTION                                                                  */
 
-.grid-item {
-  grid-template-rows: auto auto auto;
+/*                                          DEMOGRAPHICS SECTION                                                                  */
+
+.grid-container-demographics
+{
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 1px rgba(46, 101, 70, .6),
+              1px 2px rgba(46, 101, 70, .3),
+              2px 3px rgba(46, 101, 70, .2),
+              3px 4px rgba(46, 101, 70, .1);
+  border: 1px solid rgba(44, 65, 110, 1);
+  padding: 20px;
+  font-size: medium;
+  text-align: center;
+}
+.grid-item-patient-demographics {
+  grid-template-columns: auto auto;
+  grid-template-rows: 50px 50px 50px;
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 1px 2px rgba(255, 255, 255, 0.6),
               3x 4px rgba(255, 255, 255, 0.3);
 
   border: 1px solid rgba(44, 65, 110, 1);
-  padding: 10px;
+  padding: 0px;
   font-size: medium;
   text-align: left;
-}
-/* rgba(160, 209, 219, 0.8);  */
-h1 {
-  color: rgb(255, 255, 255);
-  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.7),
-               0px 1px 2px rgba(255, 255, 255, 0.3),
-               1px 2px 3px rgba(255, 255, 255, 0.3),
-               2px 3px 4px rgba(255, 255, 255, 0.3);
-  background-color:rgba(44, 65, 110, 1); 
-  box-shadow: 1px 2px rgba(255, 255, 255, 0.6),
-              3x 4px rgba(255, 255, 255, 0.3);
-  border: 1px solid rgba(0, 247, 194, 0.5);
-  text-align: center;
-}
-h2 {
-  color: rgba(44, 65, 110, 1);
-  text-shadow: 0px 4px 3px rgba(44, 65, 110,.25),
-               0px 8px 13px rgba(44, 65, 110,.5),
-               0px 18px 23px rgba(44, 65, 110,1);
-  background-color: rgba(160, 209, 219, 0.8); 
-  box-shadow: 0px 1px rgba(46, 101, 70, .6),
-              1px 2px rgba(46, 101, 70, .3),
-              2px 3px rgba(46, 101, 70, .2),
-              3px 4px rgba(46, 101, 70, .1);
-  border: 1px solid rgba(44, 65, 110, 1);
-  text-align: center;
-}
-h3{
-  color: rgba(44, 65, 110, 1);
-  text-shadow: 0px 4px 3px rgba(44, 65, 110,.25),
-               0px 8px 13px rgba(44, 65, 110,.5),
-               0px 18px 23px rgba(44, 65, 110,1);
-  background-color: rgba(160, 209, 219, 0.8); 
-  box-shadow: 0px 1px rgba(46, 101, 70, .6),
-              1px 2px rgba(46, 101, 70, .3),
-              2px 3px rgba(46, 101, 70, .2),
-              3px 4px rgba(46, 101, 70, .1);
-border: 1px solid rgba(44, 65, 110, 1);
 }
 .patient-information-grid-item
 {
@@ -135,8 +153,10 @@ border: 1px solid rgba(44, 65, 110, 1);
               3x 4px rgba(255, 255, 255, 0.3);
 
   border: 1px solid rgba(44, 65, 110, 1);
-  padding: 10px;
+  padding: 0px;
 }
+
+
 .addresswrapper
 {
   padding: 10px;
@@ -193,10 +213,18 @@ border: 1px solid rgba(44, 65, 110, 1);
   grid-area: phone;
   width:100%;
 }
+.Demographics
+{
+  text-align: left;
+  display: inline-block;
+}
+/*                                          DEMOGRAPHICS SECTION                                                                  */
 
+
+/*                                          ANTHROPOMETRICS SECTION                                                                  */
 .Anthropometrics-container
 {
-  width: 98%;
+  width: 100%;
   display: inline-grid;
   grid-template-columns: auto auto auto auto;
   background-color: rgba(255, 255, 255, 0.8);
@@ -205,7 +233,7 @@ border: 1px solid rgba(44, 65, 110, 1);
               2px 3px rgba(46, 101, 70, .2),
               3px 4px rgba(46, 101, 70, .1);
   border: 1px solid rgba(44, 65, 110, 1);
-  padding: 20px;
+  padding: 0%;
   font-size: medium;
   text-align: center;
 }
@@ -229,52 +257,91 @@ border: 1px solid rgba(44, 65, 110, 1);
   text-align: left;
   display: inline-table;
 }
-.Demographics
-{
-  text-align: left;
-  display: inline-block;
-}
-.grid-medical
-{
-  grid-template-rows: auto auto auto auto;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0px 1px rgba(46, 101, 70, .6),
-              1px 2px rgba(46, 101, 70, .3),
-              2px 3px rgba(46, 101, 70, .2),
-              3px 4px rgba(46, 101, 70, .1);
-  border: 1px solid rgba(44, 65, 110, 1);
-  padding: 0px;
-  font-size: medium;
-  text-align: center;
-}
+
+/*                                          ANTHROPOMETRICS SECTION                                                                  */
+
+
+
+
+/*                                          MEDICAL HISTORY SECTION                                                                  */
 .grid-container-medical-history
 {
   display: inline-grid;
   grid-template-columns: auto auto auto auto;
-  background-color: rgba(195, 232, 214, .4);
-  border: 1px solid rgba(44, 65, 110, 1);
-  padding: 10px;
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 1px rgba(46, 101, 70, .6),
+              1px 2px rgba(46, 101, 70, .3),
+              2px 3px rgba(46, 101, 70, .2),
+              3px 4px rgba(46, 101, 70, .1);
+  border: 1% solid rgba(44, 65, 110, 1);
+  padding: 0%;
+  font-size: medium;
+  text-align: center;
 }
-ul,ol
+.grid-item-medical-history
 {
-  list-style-type: none;
-}
-.grid-container-demographics
-{
-  width: 100%;
-  display: inline-grid;
-  grid-template-columns: auto auto auto auto;
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0px 1px rgba(46, 101, 70, .6),
               1px 2px rgba(46, 101, 70, .3),
               2px 3px rgba(46, 101, 70, .2),
               3px 4px rgba(46, 101, 70, .1);
   border: 1px solid rgba(44, 65, 110, 1);
-  padding: 20px;
+  padding:0%;
   font-size: medium;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
+.medical-history-table ,th,td
+{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(44, 65, 110, 1);
+  padding:0%;
+  text-align: center;
+}
+
+.medical-history-table> label
+{
+  text-align: left;
+}
+#condition-category, #condition-category-yes, #condition-category-date ,#condition-name, #condition-blank
+{
+  color: rgba(44, 65, 110, 1);
+  text-shadow: 0px 4px 3px rgba(44, 65, 110,.25),
+               0px 8px 13px rgba(44, 65, 110,.5),
+               0px 18px 23px rgba(44, 65, 110,1);
+  background-color: rgba(160, 209, 219, 0.8); 
+  box-shadow: 0px 1px rgba(46, 101, 70, .6),
+              1px 2px rgba(46, 101, 70, .3),
+              2px 3px rgba(46, 101, 70, .2),
+              3px 4px rgba(46, 101, 70, .1);
+  border: 1px solid rgba(44, 65, 110, 1);
+  text-align: left;
+}
+#medical-condition
+{
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.7),
+               0px 1px 2px rgba(255, 255, 255, 0.3),
+               1px 2px 3px rgba(255, 255, 255, 0.3),
+               2px 3px 4px rgba(255, 255, 255, 0.3);
+  background-color:rgba(44, 65, 110, 1); 
+  box-shadow: 1px 2px rgba(255, 255, 255, 0.6),
+              3x 4px rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(0, 247, 194, 0.5);
+  text-align: center;
+}
+
+
+/*                                          MEDICAL HISTORY SECTION                                                                  */
+
+ul,ol
+{
+  list-style-type: none;
+}
+
 .social-history-container
 {
   width: 100%;
