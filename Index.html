@@ -46,40 +46,48 @@
 			</div>
 			<div class="grid-item-patient-demographics">
 				<h2>Patient Demographics</h2>
-				<form class="Demographics">
-					<div>
-						<ol>
-							<li>
-								<label>Religion </label><br> 
-								<input type="text" name="religion" placeholder="Enter Religion">
-							</li>
-							<li>
-								<label>Gender </label><br> 
+					<table class="demographics-table">
+						<tr>
+							<td><label>Religion</label></td>
+							<td><input type="text" name="religion" placeholder="Enter Religion"></td>
+							<td><label>Race </label></td>
+							<td>
+								<select>
+									<option>Caucasian</option>
+									<option>Hispanic/Latino</option>
+									<option>Asian</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td><label>Gender </label></td>
+							<td>
 								<select>
 									<option>Male</option>
+									<option>Female</option>
+									<option>Male to Female</option>
+									<option>Female to Male</option>
 								</select>
-							</li>
-							<li>
-								<label>State of Change </label><br> 
+							</td>
+							<td>
+								<label>State of Change </label>
+							</td>
+							<td>
 								<select>
 									<option>confirmation</option>
+									<option>preconfirmation</option>
 								</select>
-							</li>
-							<li>
+							</td>
+							<td>
 								<label>Preferred Pronoun </label><br> 
+							</td>
+							<td>
 								<select>
 									<option>He/Him</option>
 								</select>
-							</li>
-							<li>
-								<label>Race </label><br> 
-								<select>
-									<option>Caucasian</option>
-								</select>
-							</li>
-						</ol>
-					</div>
-				</form>
+							</td>
+						</tr>
+					</table>
 				<div class="social-history-container">
 					<h1 id="socialhistory" >SOCIAL HISTORY</h1>
 					<div class="social-history-item">
@@ -687,7 +695,8 @@
 					<div class="past-medical-care"><h2>Past Medical Care</h2><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis harum perspiciatis commodi, voluptatum cum distinctio totam asperiores fugit placeat itaque architecto iure sit, odio qui tenetur eaque quo voluptatibus? Consequuntur?</p></div>
 					<div class="subtance-use"><h2>Subtance Use</h2><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis sapiente rerum, assumenda facilis ea iste consequuntur consequatur error harum ad veritatis accusamus corrupti est tempore esse totam dignissimos? Ut, eum.</p></div>
 	</div>
-		</div>
+	</div>
+	<div>
 		<h1 id="familyhistory" >FAMILY HISTORY</h1>
 		<h1 id="physicalactivity" >PHYSICAL ACTIVITY</h1>
 		<h1 id="nutritionalhistory" >NUTRIONAL HISTORY</h1>

@@ -5,10 +5,7 @@
   box-sizing: border-box;
 
 }
-form
-{
-  padding: 10px;
-}
+
 .img{
   height: 100%;
   width: 100%;
@@ -90,7 +87,7 @@ ul li a:hover
 
 .sidebardiv
 {
-  padding: 5px;
+  padding: 0%;
   object-fit: contain;
   width: 20%;
   position: fixed;
@@ -103,19 +100,15 @@ ul li a:hover
   float: right;
   width: 80%;
 }
-.grid-container {
-  display: inline-grid;
-  /*height: 100vw;*/
-  grid-template-columns: auto auto auto;
-  background-color: rgba(195, 232, 214, .4);
-  border: 1px solid rgba(46, 101, 70, .6);
-  padding: 10px;
-  width: 100%;
-}
+
 /*                                         GENERAL STYLING SECTION                                                                  */
 
 /*                                          DEMOGRAPHICS SECTION                                                                  */
 
+.demographics-table>tr,td
+{
+  border: 1% solid white ;
+}
 .grid-container-demographics
 {
   width: 100%;
@@ -132,8 +125,7 @@ ul li a:hover
   text-align: center;
 }
 .grid-item-patient-demographics {
-  grid-template-columns: auto auto;
-  grid-template-rows: 50px 50px 50px;
+  grid-template: auto;
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 1px 2px rgba(255, 255, 255, 0.6),
               3x 4px rgba(255, 255, 255, 0.3);
