@@ -127,7 +127,7 @@ ul li a:hover
               2px 3px rgba(46, 101, 70, .2),
               3px 4px rgba(46, 101, 70, .1);
   border: 1px solid rgba(44, 65, 110, 1);
-  padding: 20px;
+  padding: 0%;
   font-size: medium;
   text-align: center;
 }
@@ -139,7 +139,7 @@ ul li a:hover
               3x 4px rgba(255, 255, 255, 0.3);
 
   border: 1px solid rgba(44, 65, 110, 1);
-  padding: 0px;
+  padding: 0%;
   font-size: medium;
   text-align: left;
 }
@@ -153,13 +153,13 @@ ul li a:hover
               3x 4px rgba(255, 255, 255, 0.3);
 
   border: 1px solid rgba(44, 65, 110, 1);
-  padding: 0px;
+  padding: 0%;
 }
 
 
 .addresswrapper
 {
-  padding: 10px;
+  padding: 5%;
   grid-template-areas: 
   "fname mname lname"
   "address address address"
@@ -218,6 +218,28 @@ ul li a:hover
   text-align: left;
   display: inline-block;
 }
+.social-history-item
+{
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 1px rgba(46, 101, 70, .6),
+              1px 2px rgba(46, 101, 70, .3),
+              2px 3px rgba(46, 101, 70, .2),
+              3px 4px rgba(46, 101, 70, .1);
+  border: 1px solid rgba(44, 65, 110, 1);
+  padding: 0%;
+  font-size: medium;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+label {
+  color: rgb(24, 10, 102);
+  font-weight: bold;
+  display: block;
+  float: left;
+  }
+  label:after { content: ": " }
 /*                                          DEMOGRAPHICS SECTION                                                                  */
 
 
@@ -245,7 +267,7 @@ ul li a:hover
               2px 3px rgba(46, 101, 70, .2),
               3px 4px rgba(46, 101, 70, .1);
   border: 1px solid rgba(44, 65, 110, 1);
-  padding: 20px;
+  padding: 0%;
   font-size: medium;
   text-align: center;
   display: flex;
@@ -267,7 +289,7 @@ ul li a:hover
 .grid-container-medical-history
 {
   display: inline-grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0px 1px rgba(46, 101, 70, .6),
@@ -345,38 +367,17 @@ ul,ol
 .social-history-container
 {
   width: 100%;
-  display: inline-grid;
-  grid-template-columns: auto auto auto auto;
+  display: grid;
+  grid-template-rows: auto auto;
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0px 1px rgba(46, 101, 70, .6),
               1px 2px rgba(46, 101, 70, .3),
               2px 3px rgba(46, 101, 70, .2),
               3px 4px rgba(46, 101, 70, .1);
   border: 1px solid rgba(44, 65, 110, 1);
-  padding: 20px;
+  padding: 0%;
   font-size: medium;
   text-align: center;
 }
-.social-history-item
-{
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0px 1px rgba(46, 101, 70, .6),
-              1px 2px rgba(46, 101, 70, .3),
-              2px 3px rgba(46, 101, 70, .2),
-              3px 4px rgba(46, 101, 70, .1);
-  border: 1px solid rgba(44, 65, 110, 1);
-  padding: 20px;
-  font-size: medium;
-  text-align: left;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-label {
-  color: rgb(24, 10, 102);
-  font-weight: bold;
-  display: block;
-  float: left;
-  }
-  label:after { content: ": " }
+
 
