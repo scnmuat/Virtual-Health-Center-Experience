@@ -105,10 +105,6 @@ ul li a:hover
 
 /*                                          DEMOGRAPHICS SECTION                                                                  */
 
-.demographics-table>tr,td
-{
-  border: 1% solid white ;
-}
 .grid-container-demographics
 {
   width: 100%;
