@@ -132,8 +132,15 @@ ul li a:hover
   padding: 0%;
   font-size: medium;
   text-align: left;
+  display: inline-grid;
 }
-
+.demographics-table
+{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  width: 100%;
+}
 
 .addresswrapper
 {
@@ -144,8 +151,6 @@ ul li a:hover
   "city state zipcode"
   " . email phone";
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50px 50px 50px 50px;
   justify-content: space-between;
 }
 #address
@@ -191,11 +196,7 @@ ul li a:hover
   grid-area: phone;
   width:100%;
 }
-.Demographics
-{
-  text-align: left;
-  display: inline-block;
-}
+
 
 label {
   color: rgb(24, 10, 102);
