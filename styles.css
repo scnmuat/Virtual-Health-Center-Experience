@@ -266,7 +266,7 @@ label {
   font-size: medium;
   text-align: center;
 }
-.grid-item-medical-history
+.grid-item-medical-history, .medication, .past-medical-care, .substance-use, .family-history-container, .physical-activity-container
 {
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0px 1px rgba(46, 101, 70, .6),
@@ -285,7 +285,7 @@ label {
 {
   display: flex;
 }
-.medical-history-table ,th, #medical-condition-table-data, #medical-condition-table-row
+.medical-history-table ,th, #medical-condition-table-data, #medical-condition-table-row,#family-history-td
 {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(44, 65, 110, 1);

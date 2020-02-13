@@ -188,8 +188,9 @@
 		<div class="grid-container-medical-history">
 	<!-- 	____________________________________________[Create condition item to be inserted into the container]_________________________________________________	-->		
 
-				
+
 					<div class="grid-item-medical-history">
+<!-- __________________________________________Medical Condition Segment__________________________________________-->
 						<h2 id="medical-condition">Medical Condition</h2>
 						<div class="medical-condition">
 							
@@ -304,29 +305,38 @@
 										</td>
 									</tr>
 								</table>
-						</div>
-							
-
-						
-	
+							</div>
 					</div>
+<!-- __________________________________________Medical Condition Segment__________________________________________-->
 
-				
+<!-- __________________________________________Medication Segment__________________________________________-->
 					<div class="medication">
 						<h2>Medication</h2>
 						<table class="medication-table">
 							<tr>
-								<td><label>Allergies to Medication</label><input type="text" placeholder="Medication Name"><input type="submit"></td>
-							</tr>
-							<tr>
-								<td>
 									<form action="none">
-										<table>
+									<!-- <table> -->
+										<th id="condition-category">Do you have any allergies to Medication?</th>
+										<th id="condition-blank"></th>
+										<th id="condition-blank"></th>
+										<tr>
+											<td><label>Medication Name(s)</label></td>
+											<td><input type="text" placeholder="Medication Name"></td>
+											<td><input type="submit"></td>
+										</tr>
+									</form>
+									<!-- </table> -->
+										<form action="none">
+										<!-- <table> -->
+											<th id="condition-category">Are you currently taking any prescribed medications?</th>
+											<th id="condition-blank"></th>
+											<th id="condition-blank"></th>
 											<tr>
-												<td><label>Current Medication</label></td>
+												<td><label>Medication Name(s)</label></td>
 												<td><input type="text" placeholder="Name of Medication"></td>
 												<td>
 													<select>
+														<option selected disabled>Frequency</option>
 														<option> 1x day</option>
 														<option> 2x day</option>
 														<option> 3x day</option>
@@ -338,48 +348,429 @@
 												<td><input type="text" placeholder="Dose"></td>
 												<td><input type="submit"></td>
 											</tr>
-										</table>
-									  </form>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<form action="none">
-										<table>
-											<tr>
-												<td><label>Dietary Suppliments</label></td>
-												<td><input type="text" placeholder="Name of Suppliments"></td>
-												<td>
-													<select>
-														<option> 1x day</option>
-														<option> 2x day</option>
-														<option> 3x day</option>
-													</select>
-												</td>
-											</tr>
-											<tr>
-												<td><label>Current Dose</label></td>
-												<td><input type="text" placeholder="Dose"></td>
-												<td><input type="submit"></td>
-											</tr>
-										</table>
-									  </form>
-								</td>
+										</form>
+										<!-- </table> -->
+										<form action="none">
+											<!-- <table> -->
+												<th id="condition-category">Are you currently Taking Dietary Supplements?</th>
+												<th id="condition-blank"></th>
+												<th id="condition-blank"></th>
+												<tr>
+													<td><label>Suppliment(s) Name</label></td>
+													<td><input type="text" placeholder="Name of Suppliments"></td>
+													<td>
+														<select>
+															<option selected disabled>Frequency</option>
+															<option> 1x day</option>
+															<option> 2x day</option>
+															<option> 3x day</option>
+														</select>
+													</td>
+												</tr>
+												<tr>
+													<td><label>Current Dose</label></td>
+													<td><input type="text" placeholder="Dose"></td>
+													<td><input type="submit"></td>
+												</tr>
+											<!-- </table> -->
+										  </form>
 							</tr>
 						</table>
+						<div class="medication-reference-table">
+							<table class="medication-reference-table">
+								<th id="condition-category">Medication Name</th>
+								<th id="condition-category">Dosage</th>
+								<th id="condition-category">Usage</th>
+								<tr>
+									<td><input type="text" placeholder="Name"></td>
+									<td><input type="text" placeholder="Dose"></td>
+									<td><input type="text" placeholder="Usage"></td>
+								</tr>
+								<tr>
+									<td><input type="text" placeholder="Name"></td>
+									<td><input type="text" placeholder="Dose"></td>
+									<td><input type="text" placeholder="Usage"></td>
+								</tr>
+							</table>
+						</div>
+						<div class="Supplement-reference-table">
+							<table class="medication-reference-table">
+								<th id="condition-category">Supplement Name</th>
+								<th id="condition-category">Dosage</th>
+								<th id="condition-category">Usage</th>
+								<tr>
+									<td><input type="text" placeholder="Name"></td>
+									<td><input type="text" placeholder="Dose"></td>
+									<td><input type="text" placeholder="Usage"></td>
+								</tr>
+								<tr>
+									<td><input type="text" placeholder="Name"></td>
+									<td><input type="text" placeholder="Dose"></td>
+									<td><input type="text" placeholder="Usage"></td>
+								</tr>
+							</table>
+						</div>
 					</div>
-					<div class="past-medical-care"><h2>Past Medical Care</h2><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis harum perspiciatis commodi, voluptatum cum distinctio totam asperiores fugit placeat itaque architecto iure sit, odio qui tenetur eaque quo voluptatibus? Consequuntur?</p></div>
-					<div class="subtance-use"><h2>Subtance Use</h2><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis sapiente rerum, assumenda facilis ea iste consequuntur consequatur error harum ad veritatis accusamus corrupti est tempore esse totam dignissimos? Ut, eum.</p></div>
-	</div>
-	<h1 id="familyhistory" >FAMILY HISTORY</h1>
+<!-- __________________________________________Medication Segment__________________________________________-->
+
+<!-- __________________________________________Past Medical Care__________________________________________-->
+					<div class="past-medical-care">
+						<h2>Past Medical Care</h2>						
+						<table class="past-medical-care-table">
+						<tr>
+								<form action="none">
+								<!-- <table> -->
+									<th id="condition-category">Do you have any past surgeries?</th>
+									<th id="condition-blank"></th>
+									<th id="condition-blank"></th>
+									<tr>
+										<td><label>Reason for Surgery</label></td>
+										<td><input type="text" placeholder="Surgery Type"></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><label>Date of Surgery</label></td>
+										<td><input type="date" id="dateofonset" name="dateofonset"></td>
+										<td><input type="submit"></td>
+									</tr>
+								</form>
+								<!-- </table> -->
+									<form action="none">
+									<!-- <table> -->
+										<th id="condition-category">Do you have any recent medical care visits?</th>
+										<th id="condition-blank"></th>
+										<th id="condition-blank"></th>
+										<tr>
+											<td><label>Reason for Care</label></td>
+											<td><input type="text" placeholder="Description of Care"></td>
+											<td>
+												<select>
+													<option selected disabled>Type of Doctor</option>
+													<option> ND</option>
+													<option> MD</option>
+													<option> DO</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td><label>Date of Visit</label></td>
+											<td><input type="date" id="dateofonset" name="dateofonset"></td>
+											<td><input type="submit"></td>
+										</tr>
+									</form>
+									<!-- </table> -->
+									<form action="none">
+										<!-- <table> -->
+											<th id="condition-category">Do you have any history of a major illness?</th>
+											<th id="condition-blank"></th>
+											<th id="condition-blank"></th>
+											<tr>
+												<td><label>Name of Illness</label></td>
+												<td><input type="text" placeholder="Illness Name"></td>
+												<td>
+												</td>
+											</tr>
+											<tr>
+												<td><label>Date of Illness</label></td>
+												<td><input type="date" id="dateofonset" name="dateofonset"></td></td>
+												<td><input type="submit"></td>
+											</tr>
+										<!-- </table> -->
+									  </form>
+								</tr>
+							</table>
+							<div class="past-medical-care-table">
+								<table class="past-medical-care-reference-table">
+									<th id="condition-category">Surgery Type</th>
+									<th id="condition-blank"></th>
+									<th id="condition-category">Date</th>
+									<tr>
+										<td><input type="text" placeholder="Surgery Type"></td>
+										<td></td>
+										<td><input type="date" id="dateofonset" name="dateofonset"></td>
+									</tr>
+									<th id="condition-category">Reason for Care</th>
+									<th id="condition-category">Doctor Type</th>
+									<th id="condition-category">Date</th>
+									<tr>
+										<td><input type="text" placeholder="Reason"></td>
+										<td><input type="text" placeholder="Doctor"></td>
+										<td><input type="date" id="dateofonset" name="dateofonset"></td>
+									</tr>
+									<th id="condition-category">Illness Type</th>
+									<th id="condition-blank"></th>
+									<th id="condition-category">Date</th>
+									<tr>
+										<td><input type="text" placeholder="Illness"></td>
+										<td></td>
+										<td><input type="date" id="dateofonset" name="dateofonset"></td>
+									</tr>
+								</table>
+							</div>
+					</div>
+<!-- __________________________________________Past Medical Care__________________________________________-->
+<!-- __________________________________________Family Health History Segment__________________________________________-->
+<div class="family-history-container">
+	<h1 id="familyhistory" >FAMILY HEALTH HISTORY</h1>
+	<table>
+		<h3>Have your close relatives experienced any of the following?</h3>
+		<tr>
+			<th id="condition-category">Condition</th>
+			<th id="condition-category">Yes</th>
+			<th id="condition-category">Age</th>
+			<th id="condition-category">Condition</th>
+			<th id="condition-category">Yes</th>
+			<th id="condition-category">Age of Diagnosis</th>
+		</tr>
+			<td id="family-history-td"><label>Heart Attack, Angina</label></td>
+			<td id="family-history-td"><input type="Checkbox"></td>
+			<td id="family-history-td"><input type="text"placeholder="Age"></td>
+			<td id="family-history-td"><label>Stroke</label></td>
+			<td id="family-history-td"><input type="Checkbox"></td>
+			<td id="family-history-td"><input type="text"placeholder="Age"></td>
+		<tr>
+			<td id="family-history-td"><label>Diabetes</label></td>
+			<td id="family-history-td"><input type="Checkbox"></td>
+			<td id="family-history-td"><input type="text"placeholder="Age"></td>
+			<td id="family-history-td"><label>High Blood Pressure</label></td>
+			<td id="family-history-td"><input type="Checkbox"></td>
+			<td id="family-history-td"><input type="text"placeholder="Age"></td>
+		</tr>
+		<tr>
+			<td id="family-history-td"><label>Kidney Disease</label></td>
+			<td id="family-history-td"><input type="Checkbox"></td>
+			<td id="family-history-td"><input type="text"placeholder="Age"></td>
+			<td id="family-history-td"><label>High Cholesterol</label></td>
+			<td id="family-history-td"><input type="Checkbox"></td>
+			<td id="family-history-td"><input type="text"placeholder="Age"></td>
+		</tr>
+		<tr>
+			<td id="family-history-td"><label>Thyroid Disease</label></td>
+			<td id="family-history-td"><input type="Checkbox"></td>
+			<td id="family-history-td"><input type="text"placeholder="Age"></td>
+			<td id="family-history-td"><label>Obesity</label></td>
+			<td id="family-history-td"><input type="Checkbox"></td>
+			<td id="family-history-td"><input type="text"placeholder="Age"></td>
+		</tr>
+		<tr>
+			<td id="family-history-td"><label>Rheumatoid Arthritis</label></td>
+			<td id="family-history-td"><input type="Checkbox"></td>
+			<td id="family-history-td"><input type="text"placeholder="Age"></td>
+			<td id="family-history-td"><label>Osteoarthritis</label></td>
+			<td id="family-history-td"><input type="Checkbox"></td>
+			<td id="family-history-td"><input type="text"placeholder="Age"></td>
+		</tr>
+		<tr>
+			<td id="family-history-td"><label>Asthma</label></td>
+			<td id="family-history-td"><input type="Checkbox"></td>
+			<td id="family-history-td"><input type="text"placeholder="Age"></td>
+			<td id="family-history-td"><label>Mental Health Disorder</label></td>
+			<td id="family-history-td"><input type="Checkbox"></td>
+			<td id="family-history-td"><input type="text"placeholder="Age"></td>
+		</tr>
+		<tr>
+			<td id="family-history-td"><label>Substance Use</label></td>
+			<td id="family-history-td"><input type="Checkbox"></td>
+			<td id="family-history-td"><input type="text"placeholder="Age"></td>
+			<td id="family-history-td"><label>Cancer(speficy type)</label></td>
+			<td id="family-history-td"><input type="Checkbox"></td>
+			<td id="family-history-td"><input type="text"placeholder="Age"></td>
+		</tr>
+		<tr>
+			<td id="family-history-td"></td>
+			<td id="family-history-td"></td>
+			<td id="family-history-td"></td>
+			<td id="family-history-td"></td>
+			<td id="family-history-td"></td>
+			<td id="family-history-td"><input type="text" placeholder="Type of Cancer"></td>
+		</tr>
+	</table>
+</div>
+<!-- __________________________________________Family Health History Segment__________________________________________-->
+<!-- __________________________________________Physical Activity Segment__________________________________________-->
+<div class="physical-activity-container">
 	<h1 id="physicalactivity" >PHYSICAL ACTIVITY</h1>
+	<table class="physical-activity-table">
+		<th id="condition-category">Types of Physical Activity</th>
+		<th id="condition-blank"></th>
+		<th id="condition-blank"></th>
+		<tr>
+			<td><label>What form of Physical Activity do you enjoy?</label></td>
+			<td><input type="text" placeholder="Type"></td>
+			<td>
+				<select>
+					<option selected disabled>Times per week?</option>
+					<option> 1x week</option>
+					<option> 2x week</option>
+					<option> 3x week</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td><label>Duration of Exercise</label></td>
+			<td><input type="text" placeholder="Duration"></td>
+			<td>
+				<select>
+					<option selected disabled>Intensity</option>
+					<option>Low</option>
+					<option> Moderate</option>
+					<option>High</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td><label>Any Barriers to Physical Activity?</label></td>
+			<td><input type="text" placeholder="Barrier"></td>
+			<td><input type="submit"></td>
+		</tr>
+	</table>
+	<table class="physical-activity-rest-table">
+		<th id="condition-category">Sendentary Time</th>
+		<th id="condition-blank"></th>
+		<th id="condition-blank"></th>
+		<tr>
+			<td><label>How much time do you spend sitting or reclining per day?</label></td>
+			<td></td>
+			<td><input type="text" placeholder="Hourse"></td>
+		</tr>
+		<th id="condition-category">Sleeping Habits</th>
+		<th id="condition-blank"></th>
+		<th id="condition-blank"></th>
+		<tr>
+			<td><label>How many hours of sleep per day?</label></td>
+			<td></td>
+			<td><input type="text" placeholder="Hourse"></td>
+		</tr>
+		<tr>
+			<td><label>Any issues with sleep?</label></td>
+			<td><input type="checkbox">Yes</td>
+			<td><input type="checkbox">No</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><input type="text" placeholder="Describe issues"></td>
+		</tr>
+	</table>
+</div>
+<!-- __________________________________________Physical Activity Segment__________________________________________-->
+
+
+<!-- __________________________________________Substance Use Segment__________________________________________-->
+					<div class="substance-use">
+						<h2>Subtance Use</h2>
+						<table class="substance-use-table">
+							<tr>
+									<form action="none">
+									<!-- <table> -->
+										<th id="condition-category">Alcohole Usage</th>
+										<th id="condition-blank"></th>
+										<th id="condition-blank"></th>
+										<tr>
+											<td><label>Have you ever used?</label></td>
+											<td><input type="checkbox" value="Yes">Yes </td>
+											<td><input type="checkbox" value="No">No</td>
+										</tr>
+										<tr>
+											<td><label>Are you concerned with use?</label></td>
+											<td><input type="checkbox" value="Yes">Yes </td>
+											<td><input type="checkbox" value="No">No</td>
+										</tr>
+										<tr>
+											<td><label>Amount Consumed</label></td>
+											<td><input type="text" placeholder="Less than Daily"></td>
+											<td>
+												<select>
+													<option selected disabled>How Often?</option>
+													<option> 1x day</option>
+													<option> 2x day</option>
+													<option> 3x day</option>
+												</select>
+											</td>
+										</tr>
+
+									</form>
+									<!-- </table> -->
+										<form action="none">
+										<!-- <table> -->
+											<th id="condition-category">Tobaco Usage</th>
+											<th id="condition-blank"></th>
+											<th id="condition-blank"></th>
+											<tr>
+												<td><label>Have you ever used?</label></td>
+												<td><input type="checkbox" value="Yes">Yes </td>
+												<td><input type="checkbox" value="No">No</td>
+											</tr>
+											<tr>
+												<td><label>Are you concerned with use?</label></td>
+												<td><input type="checkbox" value="Yes">Yes </td>
+												<td><input type="checkbox" value="No">No</td>
+											</tr>
+											<tr>
+												<td><label>Amount Consumed</label></td>
+												<td><input type="text" placeholder="Less than Daily"></td>
+												<td>
+													<select>
+														<option selected disabled>How Often?</option>
+														<option> 1x day</option>
+														<option> 2x day</option>
+														<option> 3x day</option>
+													</select>
+												</td>
+											</tr>
+										</form>
+										<!-- </table> -->
+										<form action="none">
+											<!-- <table> -->
+												<th id="condition-category">Recreational Drug Usage</th>
+												<th id="condition-blank"></th>
+												<th id="condition-blank"></th>
+												<tr>
+													<td><label>Have you ever used?</label></td>
+													<td><input type="checkbox" value="Yes">Yes </td>
+													<td><input type="checkbox" value="No">No</td>
+												</tr>
+												<tr>
+													<td><label>Are you concerned with use?</label></td>
+													<td><input type="checkbox" value="Yes">Yes </td>
+													<td><input type="checkbox" value="No">No</td>
+												</tr>
+												<tr>
+													<td><label>Type of Drug</label></td>
+													<td><input type="text" placeholder="Type"></td>
+													<td>
+														<select>
+															<option selected disabled>How Often?</option>
+															<option> 1x day</option>
+															<option> 2x day</option>
+															<option> 3x day</option>
+														</select>
+													</td>
+												</tr>
+											<!-- </table> -->
+										  </form>
+									</tr>
+								</table>
+					</div>
+<!-- __________________________________________Substance Use Segment__________________________________________-->
+
+
+
+
+
+
+	</div>
+	
+	
 	<h1 id="nutritionalhistory" >NUTRIONAL HISTORY</h1>
-	<h1 id="socialhistory" >SOCIAL & ENVIRONMENTAL HISTORY</h1>
+	
 	<div class="grid-container-social-history">
 		<div class="grid-item-social-history">
 				<div class="social-history-container">
-						<h1 id="socialhistory" >SOCIAL HISTORY</h1>
+					<h1 id="socialhistory" >SOCIAL & ENVIRONMENTAL HISTORY</h1>
+
 						<div class="social-history-item">
+
 							<label>Relationship Status</label>
 							<select>
 								<option>Married</option>
@@ -396,7 +787,7 @@
 								<input type="text" name="number-of-children" placeholder="Number of Children">
 							</div>
 						</div>
-					</div>
+				</div>
 		</div>
 	</div>
 	</div>
