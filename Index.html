@@ -763,36 +763,151 @@
 	
 	
 	<h1 id="nutritionalhistory" >NUTRIONAL HISTORY</h1>
-	
+<!-- __________________________________________Social History Segment__________________________________________-->
 	<div class="grid-container-social-history">
 		<div class="grid-item-social-history">
+			<h1 id="socialhistory" >SOCIAL & ENVIRONMENTAL HISTORY</h1>
 				<div class="social-history-container">
-					<h1 id="socialhistory" >SOCIAL & ENVIRONMENTAL HISTORY</h1>
-
 						<div class="social-history-item">
+							<h2>Environmental Factors</h2>
+							<table>
+								<th id="condition-category">Question</th>
+								<th id="condition-category">Yes</th>
+								<th id="condition-category">If yes, Describe</th>
+								<tr>
+									<td><label>Do you have any Health Concerns about your current home or environment?</label></td>
+									<td><input type="checkbox"></td>
+									<td><input type="text" placeholder="Description"></td>
+								</tr>
+								<tr>
+									<td><label>Have you had any hazardous environmental or occupational exposures?</label></td>
+									<td><input type="checkbox"></td>
+									<td><input type="text" placeholder="Description"></td>
+								</tr>
+								<tr>
+									<td><label>Are you unhappy with your occupation?</label></td>
+									<td><input type="checkbox"></td>
+									<td><input type="text" placeholder="Description"></td>
+								</tr>
+							</table>
+							
 
-							<label>Relationship Status</label>
-							<select>
-								<option>Married</option>
-								<option>Single</option>
-								<option>Divorced</option>
-								<option>Other</option>
-							</select>
 							<div class="living-arrangement">
-								<input type="checkbox" name="live-alone"> Live Alone
-								<input type="checkbox" name="live-with-others"> Live with Others
+								
+								
 							</div>
-							<div class="living-arrangement">
-								<label>Do you have Children?</label>
-								<input type="text" name="number-of-children" placeholder="Number of Children">
-							</div>
+
+						</div>
+						<div class="social-history-item">
+							<h2>Relationship Factors</h2>
+							<table>
+								<tr>
+									<td><label>Do you live alone or with Others?</label></td>
+									<td><input type="checkbox" name="live-alone"> Live Alone</td>
+									<td><input type="checkbox" name="live-with-others"> Live with Others</td>
+								</tr>
+								<tr>
+									<td><label>Relationship Status</label></td>
+									<td></td>
+									<td>
+										<select>
+											<option>Married</option>
+											<option>Single</option>
+											<option>Divorced</option>
+											<option>Other</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th id="condition-category">Question</th>
+									<th id="condition-category">Yes</th>
+									<th id="condition-category">If yes, Describe</th>
+									<tr>
+										<td><label>Do you feel empowered by your relationship?</label></td>
+										<td><input type="checkbox"></td>
+										<td><input type="text" placeholder="Description"></td>
+									</tr>
+									<tr>
+										<td><label>Do you feel satisfied with your sex life?</label></td>
+										<td><input type="checkbox"></td>
+										<td><input type="text" placeholder="Description"></td>
+									</tr>
+								</tr>
+								<tr>
+									<td><label>Do you have Children?</label></td>
+									<td><input type="checkbox">Yes</td>
+									<td><input type="text" name="number-of-children" placeholder="Number of Children"></td>
+								</tr>
+							</table>
+						</div>
+						<div class="social-history-item">
+							<h2>Stress Management</h2>
+							<table>
+								<h3>Stress Management</h3>
+								<tr>
+									<td id="family-history-td"><label>How much stress do you experience?</label></td>
+									<td id="family-history-td">
+										<select>
+											<option selected disabled>Status</option>
+											<option>None</option>
+											<option>Liittle</option>
+											<option>Moderate</option>
+											<option>High</option>
+											<option> Very High</option>
+										</select>
+									</td>
+									<td id="family-history-td"><input type="text"placeholder="Description"></td>
+									<td id="family-history-td"><label>How well do you handle stress?</label></td>
+									<td id="family-history-td">
+										<select>
+											<option selected disabled>Status</option>
+											<option>Not at All</option>
+											<option>Not Well</option>
+											<option>Moderately</option>
+											<option>Well</option>
+											<option>Very Well</option>
+										</select>
+									</td>
+									<td id="family-history-td"><input type="text"placeholder="Description"></td>
+								</tr>
+								<h3>What factors contribute to your stress?</h3>
+								<tr>
+									<th id="condition-category">Factor</th>
+									<th id="condition-category">Yes</th>
+									<th id="condition-category">Description</th>
+									<th id="condition-category">Factor</th>
+									<th id="condition-category">Yes</th>
+									<th id="condition-category">Description</th>
+								</tr>
+									<td id="family-history-td"><label>Personal</label></td>
+									<td id="family-history-td"><input type="Checkbox"></td>
+									<td id="family-history-td"><input type="text"placeholder="Description"></td>
+									<td id="family-history-td"><label>Relationship</label></td>
+									<td id="family-history-td"><input type="Checkbox"></td>
+									<td id="family-history-td"><input type="text"placeholder="Description"></td>
+								<tr>
+								</tr>
+									<td id="family-history-td"><label>Work</label></td>
+									<td id="family-history-td"><input type="Checkbox"></td>
+									<td id="family-history-td"><input type="text"placeholder="Description"></td>
+									<td id="family-history-td"><label>Finances</label></td>
+									<td id="family-history-td"><input type="Checkbox"></td>
+									<td id="family-history-td"><input type="text"placeholder="Description"></td>
+								<tr>
+									<td id="family-history-td"><label>Other</label></td>
+									<td id="family-history-td"><input type="Checkbox"></td>
+									<td id="family-history-td"><input type="text"placeholder="Description"></td>
+								</tr>
+
+							</table>
 						</div>
 				</div>
 		</div>
 	</div>
+<!-- __________________________________________Social History Segment__________________________________________-->
 	</div>
 	<div>
-		
+
 
 	</div>
 </body>
