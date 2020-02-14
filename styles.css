@@ -7,13 +7,11 @@
 }
 
 .img{
-  max-height: 100%;
   max-width: 100%;
   object-fit: contain;
 }
 .scnm-logo
 {
-  height: 100%;
   width: 100%;
   margin: auto;
 
@@ -106,14 +104,19 @@ ul li a:hover
   position: relative;
   float: right;
   width: 80%;
+  border: 1px solid rgba(44, 65, 110, 1);
 }
 table
 {
-  margin: 2%;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
 }
 form
 {
-  margin: 2%;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
 }
 
 /*                                         GENERAL STYLING SECTION                                                                  */
@@ -306,6 +309,8 @@ label {
   border: 1px solid rgba(44, 65, 110, 1);
   padding:0%;
   align-content: center;
+  text-align: center;
+  margin: auto;
 }
 #medical-condition
 {
