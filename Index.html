@@ -51,8 +51,7 @@
 					<th id="condition-blank"></th>
 					<th id="condition-category">Race</th>
 					<th id="condition-blank"></th>
-					<th id="condition-category">Religion</th>
-					<th id="condition-blank"></th>
+
 					<tr>
 						<td><label>Relationship Status </label></td>
 						<td>
@@ -73,15 +72,12 @@
 								<option>Asian</option>
 							</select>
 						</td>
-						<td><label>Religion</label></td>
-						<td><input type="text" name="religion" placeholder="Enter Religion"></td>
 					</tr>
 					<th id="condition-category">Gender</th>
 					<th id="condition-blank"></th>
 					<th id="condition-category">Transition</th>
 					<th id="condition-blank"></th>
-					<th id="condition-category">Pronoun</th>
-					<th id="condition-blank"></th>
+
 					<tr>
 						<td><label>Gender </label></td>
 						<td>
@@ -101,6 +97,12 @@
 								<option>preconfirmation</option>
 							</select>
 						</td>
+					</tr>
+					<th id="condition-category">Pronoun</th>
+					<th id="condition-blank"></th>
+					<th id="condition-category">Religion</th>
+					<th id="condition-blank"></th>
+					<tr>
 						<td>
 							<label>Preferred Pronoun </label><br> 
 						</td>
@@ -109,11 +111,13 @@
 								<option>He/Him</option>
 							</select>
 						</td>
+						<td><label>Religion</label></td>
+						<td><input type="text" name="religion" placeholder="Enter Religion"></td>
 					</tr>
 				</table>
 			</div>
-			<div class="grid-item-patient-information">
-				<img src="SCNM_Banner_1.jpg">
+			<div class="grid-item-patient-information-logo">
+				<img class="scnm-logo" src="SCNM Logo png.png">
 			</div>
 		</div>
 		<h1 id="anthropometrics">ANTHROPOMETRICS</h1>
@@ -528,6 +532,103 @@
 							</div>
 					</div>
 <!-- __________________________________________Past Medical Care__________________________________________-->
+<!-- __________________________________________Substance Use Segment__________________________________________-->
+<div class="substance-use">
+	<h2>Subtance Use</h2>
+	<table class="substance-use-table">
+		<tr>
+				<form action="none">
+				<!-- <table> -->
+					<th id="condition-category">Alcohole Usage</th>
+					<th id="condition-blank"></th>
+					<th id="condition-blank"></th>
+					<tr>
+						<td><label>Have you ever used?</label></td>
+						<td><input type="checkbox" value="Yes">Yes </td>
+						<td><input type="checkbox" value="No">No</td>
+					</tr>
+					<tr>
+						<td><label>Are you concerned with use?</label></td>
+						<td><input type="checkbox" value="Yes">Yes </td>
+						<td><input type="checkbox" value="No">No</td>
+					</tr>
+					<tr>
+						<td><label>Amount Consumed</label></td>
+						<td><input type="text" placeholder="Less than Daily"></td>
+						<td>
+							<select>
+								<option selected disabled>How Often?</option>
+								<option> 1x day</option>
+								<option> 2x day</option>
+								<option> 3x day</option>
+							</select>
+						</td>
+					</tr>
+
+				</form>
+				<!-- </table> -->
+					<form action="none">
+					<!-- <table> -->
+						<th id="condition-category">Tobaco Usage</th>
+						<th id="condition-blank"></th>
+						<th id="condition-blank"></th>
+						<tr>
+							<td><label>Have you ever used?</label></td>
+							<td><input type="checkbox" value="Yes">Yes </td>
+							<td><input type="checkbox" value="No">No</td>
+						</tr>
+						<tr>
+							<td><label>Are you concerned with use?</label></td>
+							<td><input type="checkbox" value="Yes">Yes </td>
+							<td><input type="checkbox" value="No">No</td>
+						</tr>
+						<tr>
+							<td><label>Amount Consumed</label></td>
+							<td><input type="text" placeholder="Less than Daily"></td>
+							<td>
+								<select>
+									<option selected disabled>How Often?</option>
+									<option> 1x day</option>
+									<option> 2x day</option>
+									<option> 3x day</option>
+								</select>
+							</td>
+						</tr>
+					</form>
+					<!-- </table> -->
+					<form action="none">
+						<!-- <table> -->
+							<th id="condition-category">Recreational Drug Usage</th>
+							<th id="condition-blank"></th>
+							<th id="condition-blank"></th>
+							<tr>
+								<td><label>Have you ever used?</label></td>
+								<td><input type="checkbox" value="Yes">Yes </td>
+								<td><input type="checkbox" value="No">No</td>
+							</tr>
+							<tr>
+								<td><label>Are you concerned with use?</label></td>
+								<td><input type="checkbox" value="Yes">Yes </td>
+								<td><input type="checkbox" value="No">No</td>
+							</tr>
+							<tr>
+								<td><label>Type of Drug</label></td>
+								<td><input type="text" placeholder="Type"></td>
+								<td>
+									<select>
+										<option selected disabled>How Often?</option>
+										<option> 1x day</option>
+										<option> 2x day</option>
+										<option> 3x day</option>
+									</select>
+								</td>
+							</tr>
+						<!-- </table> -->
+					  </form>
+				</tr>
+			</table>
+</div>
+<!-- __________________________________________Substance Use Segment__________________________________________-->
 <!-- __________________________________________Family Health History Segment__________________________________________-->
 <div class="family-history-container">
 	<h1 id="familyhistory" >FAMILY HEALTH HISTORY</h1>
@@ -675,103 +776,7 @@
 <!-- __________________________________________Physical Activity Segment__________________________________________-->
 
 
-<!-- __________________________________________Substance Use Segment__________________________________________-->
-					<div class="substance-use">
-						<h2>Subtance Use</h2>
-						<table class="substance-use-table">
-							<tr>
-									<form action="none">
-									<!-- <table> -->
-										<th id="condition-category">Alcohole Usage</th>
-										<th id="condition-blank"></th>
-										<th id="condition-blank"></th>
-										<tr>
-											<td><label>Have you ever used?</label></td>
-											<td><input type="checkbox" value="Yes">Yes </td>
-											<td><input type="checkbox" value="No">No</td>
-										</tr>
-										<tr>
-											<td><label>Are you concerned with use?</label></td>
-											<td><input type="checkbox" value="Yes">Yes </td>
-											<td><input type="checkbox" value="No">No</td>
-										</tr>
-										<tr>
-											<td><label>Amount Consumed</label></td>
-											<td><input type="text" placeholder="Less than Daily"></td>
-											<td>
-												<select>
-													<option selected disabled>How Often?</option>
-													<option> 1x day</option>
-													<option> 2x day</option>
-													<option> 3x day</option>
-												</select>
-											</td>
-										</tr>
 
-									</form>
-									<!-- </table> -->
-										<form action="none">
-										<!-- <table> -->
-											<th id="condition-category">Tobaco Usage</th>
-											<th id="condition-blank"></th>
-											<th id="condition-blank"></th>
-											<tr>
-												<td><label>Have you ever used?</label></td>
-												<td><input type="checkbox" value="Yes">Yes </td>
-												<td><input type="checkbox" value="No">No</td>
-											</tr>
-											<tr>
-												<td><label>Are you concerned with use?</label></td>
-												<td><input type="checkbox" value="Yes">Yes </td>
-												<td><input type="checkbox" value="No">No</td>
-											</tr>
-											<tr>
-												<td><label>Amount Consumed</label></td>
-												<td><input type="text" placeholder="Less than Daily"></td>
-												<td>
-													<select>
-														<option selected disabled>How Often?</option>
-														<option> 1x day</option>
-														<option> 2x day</option>
-														<option> 3x day</option>
-													</select>
-												</td>
-											</tr>
-										</form>
-										<!-- </table> -->
-										<form action="none">
-											<!-- <table> -->
-												<th id="condition-category">Recreational Drug Usage</th>
-												<th id="condition-blank"></th>
-												<th id="condition-blank"></th>
-												<tr>
-													<td><label>Have you ever used?</label></td>
-													<td><input type="checkbox" value="Yes">Yes </td>
-													<td><input type="checkbox" value="No">No</td>
-												</tr>
-												<tr>
-													<td><label>Are you concerned with use?</label></td>
-													<td><input type="checkbox" value="Yes">Yes </td>
-													<td><input type="checkbox" value="No">No</td>
-												</tr>
-												<tr>
-													<td><label>Type of Drug</label></td>
-													<td><input type="text" placeholder="Type"></td>
-													<td>
-														<select>
-															<option selected disabled>How Often?</option>
-															<option> 1x day</option>
-															<option> 2x day</option>
-															<option> 3x day</option>
-														</select>
-													</td>
-												</tr>
-											<!-- </table> -->
-										  </form>
-									</tr>
-								</table>
-					</div>
-<!-- __________________________________________Substance Use Segment__________________________________________-->
 
 
 
