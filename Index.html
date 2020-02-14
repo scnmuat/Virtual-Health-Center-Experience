@@ -29,31 +29,59 @@
 	<div class="mainbodydiv">
 		<h1 id="demographics">DEMOGRAPHICS</h1>
 		<div class="grid-container-demographics">
+
+			<div class="grid-item-patient-information">
+				<h2>Patient Information</h2>
+					<div class="addresswrapper">
+						<div class="fname"><label>First </label><input type="text" name="firstname" placeholder="Enter First Name" required=""></div>
+						<div class="mname"><label>Middle </label><input type="text" name="middlename" placeholder="Enter Middle Name" ></div>
+						<div class="lname"><label>Last </label><input type="text" name="lastname" placeholder="Enter Last Name" required=""></div>
+						<div class="address"><label>Address </label><input type="text" name="address" placeholder="Address" required="" id="address"></div>
+						<div class="city"><label>City </label><input type="text" name="city" placeholder="City" required=""></div>
+						<div class="state"><label>State </label><input type="text" name="state" placeholder="State" required=""></div>	
+						<div class="zipcode"><label>Zipcode </label><input type="Zipcode" name="zipcode" placeholder="Zipcode" required=""></div>
+						<div class="email"><label>Email </label><input type="email" name="email" placeholder="email@email.com" required=""></div>		
+						<div class="phone"><label>Phone </label><input type="Phone" name="phone" placeholder="Phone Number" required=""></div>
+					</div>
+			</div>
 			<div class="grid-item-patient-information">
 				<h2>Demographic Information</h2>
 				<table class="demographics-table">
+					<th id="condition-category">Status</th>
+					<th id="condition-blank"></th>
+					<th id="condition-category">Race</th>
+					<th id="condition-blank"></th>
+					<th id="condition-category">Religion</th>
+					<th id="condition-blank"></th>
 					<tr>
-						<td><label>Religion</label></td>
-						<td><input type="text" name="religion" placeholder="Enter Religion"></td>
+						<td><label>Relationship Status </label></td>
+						<td>
+							<select>
+								<option selected disabled>Status</option>
+								<option>Married</option>
+								<option>Single</option>
+								<option>Divorced</option>
+								<option>Widowed</option>
+							</select>
+						</td>
 						<td><label>Race </label></td>
 						<td>
 							<select>
+								<option selected disabled>Race</option>
 								<option>Caucasian</option>
 								<option>Hispanic/Latino</option>
 								<option>Asian</option>
 							</select>
 						</td>
+						<td><label>Religion</label></td>
+						<td><input type="text" name="religion" placeholder="Enter Religion"></td>
 					</tr>
-					<tr>
-						<td><div></div></td>
-						<td><div></div></td>
-						<td><div></div></td>
-					</tr>
-					<tr>
-						<td><div></div></td>
-						<td><div></div></td>
-						<td><div></div></td>
-					</tr>
+					<th id="condition-category">Gender</th>
+					<th id="condition-blank"></th>
+					<th id="condition-category">Transition</th>
+					<th id="condition-blank"></th>
+					<th id="condition-category">Pronoun</th>
+					<th id="condition-blank"></th>
 					<tr>
 						<td><label>Gender </label></td>
 						<td>
@@ -83,18 +111,6 @@
 						</td>
 					</tr>
 				</table>
-				<h2>Patient Information</h2>
-					<div class="addresswrapper">
-						<div class="fname"><label>First </label><input type="text" name="firstname" placeholder="Enter First Name" required=""></div>
-						<div class="mname"><label>Middle </label><input type="text" name="middlename" placeholder="Enter Middle Name" ></div>
-						<div class="lname"><label>Last </label><input type="text" name="lastname" placeholder="Enter Last Name" required=""></div>
-						<div class="address"><label>Address </label><input type="text" name="address" placeholder="Address" required="" id="address"></div>
-						<div class="city"><label>City </label><input type="text" name="city" placeholder="City" required=""></div>
-						<div class="state"><label>State </label><input type="text" name="state" placeholder="State" required=""></div>	
-						<div class="zipcode"><label>Zipcode </label><input type="Zipcode" name="zipcode" placeholder="Zipcode" required=""></div>
-						<div class="email"><label>Email </label><input type="email" name="email" placeholder="email@email.com" required=""></div>		
-						<div class="phone"><label>Phone </label><input type="Phone" name="phone" placeholder="Phone Number" required=""></div>
-					</div>
 			</div>
 		</div>
 		<h1 id="anthropometrics">ANTHROPOMETRICS</h1>
