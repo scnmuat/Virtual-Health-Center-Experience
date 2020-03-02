@@ -7,7 +7,7 @@
 .mainbodydiv{
     background-color: var(--primary-color);
     color: #fff;
-    height: 200vh;
+    height: 300vh;
     position: relative;
     margin: .5%;
 }
@@ -18,7 +18,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 200vh;
+  height: 300vh;
   z-index: -1;
 }
 *{
@@ -65,6 +65,7 @@ h1 {
               3x 4px rgba(255, 255, 255, 0.3);
   border: 1px solid rgba(0, 247, 194, 0.5);
   text-align: center;
+  border-radius: 100px;
 }
 h2 {
   color: rgba(44, 65, 110, 1);
@@ -78,6 +79,7 @@ h2 {
               3px 4px rgba(46, 101, 70, .1);
   border: 1px solid rgba(44, 65, 110, 1);
   text-align: center;
+  border-radius: 100px;
 }
 h3{
   color: rgba(44, 65, 110, 1);
@@ -90,6 +92,7 @@ h3{
               2px 3px rgba(46, 101, 70, .2),
               3px 4px rgba(46, 101, 70, .1);
   border: 1px solid rgba(44, 65, 110, 1);
+  border-radius: 100px;
 }
 ul,ol
 {
@@ -114,7 +117,26 @@ ul li a:hover
   color: darkgreen;
   z-index: -1;
 }
-
+input, select, option{
+  display: inline-block;
+  border: none;
+  background-color: #fff;
+  border: 1px solid rgba(44, 65, 110,.25);
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  transition: opacity 1s ease-in;
+  border-radius: 100px;
+  color:rgba(44, 65, 110, 1);
+}
+input:hover,select:hover, option:hover{
+  background-color: var(--primary-color);
+  opacity: 1;
+  color: #fff;
+}
+input:hover::-webkit-input-placeholder
+{
+    color: #fff;
+}
 
 .sidebardiv
 {
@@ -179,32 +201,15 @@ form
 /*________________________________________________________________[ DEMOGRAPHICS SECTION ]________________________________________________________________*/
 .grid-container-demographics
 {
- 
-  display: inline-grid;
-  grid-template-columns: auto auto auto;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0px 1px rgba(46, 101, 70, .6),
-              1px 2px rgba(46, 101, 70, .3),
-              2px 3px rgba(46, 101, 70, .2),
-              3px 4px rgba(46, 101, 70, .1);
-  border: 1px solid rgba(44, 65, 110, 1);
-  margin: 0%;
-  font-size: medium;
-  text-align: center;
+  display: flex;
+  flex: 1;
+  width: 100vw;
+  justify-content: center;
+  margin: auto;
 }
-.grid-item-patient-demographics {
 
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 1px 2px rgba(255, 255, 255, 0.6),
-              3x 4px rgba(255, 255, 255, 0.3);
-
-  border: 1px solid rgba(44, 65, 110, 1);
-  padding: 0%;
-  font-size: medium;
-  text-align: left;
-}
-.grid-item-patient-demographics:hover{
-  box-shadow: 0 4px 12px rgba(44, 65, 110, 1);
+.demographics-form:hover{
+  box-shadow: 0 4px 12px rgba(44, 65, 110, 1) inset;
 }
 .demographics-table
 {
@@ -213,10 +218,123 @@ form
   justify-content: space-between;
   width: 100%;
 }
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
 
-.addresswrapper
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] ,select, option{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+/* .addresswrapper
 {
-  padding: 5%;
+  flex: 1;
+  padding: 1%;
   grid-template-areas: 
   "fname mname lname"
   "address address address"
@@ -224,16 +342,12 @@ form
   " . email phone";
   display: grid;
   justify-content: space-between;
-  width: 40%;
-  column-gap: 5%;
-  row-gap: 5%;
+  margin: auto;
+  column-gap: 1%;
+  row-gap: 1%;
 }
-#address
-{
-  box-sizing: border-box;
-  width:100%;
-}
-.addresswrapper > .addresswrapper > fname {
+
+.addresswrapper > fname {
   grid-area: fname;
   width:100%;
 }
@@ -270,7 +384,7 @@ form
 .addresswrapper > .phone {
   grid-area: phone;
   width:100%;
-}
+} */
 
 
 label {
@@ -284,7 +398,7 @@ label {
 
 /*________________________________________________________________[ ANTHROPOMETRICS SECTION  ]________________________________________________________________*/
 
-.Anthropometrics-container,.social-history-container, .grid-container-demographics
+.Anthropometrics-container,.social-history-container
 {
   width: 100%;
   display: inline-grid;
@@ -295,6 +409,7 @@ label {
               2px 3px rgba(46, 101, 70, .2),
               3px 4px rgba(46, 101, 70, .1);
   border: 1px solid rgba(44, 65, 110, 1);
+  border-radius: 10px;
   padding: 0%;
   font-size: medium;
   text-align: center;
@@ -313,6 +428,10 @@ label {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  border-radius: 14px;
+}
+.Anthropometrics-item:hover,.grid-item-patient-information:hover{
+  box-shadow: 0 4px 12px rgba(44, 65, 110, 1) inset;
 }
 .Anthropometrics
 {
@@ -336,6 +455,7 @@ label {
               2px 3px rgba(46, 101, 70, .2),
               3px 4px rgba(46, 101, 70, .1);
   border: 1% solid rgba(44, 65, 110, 1);
+  border-radius: 12px;
   padding: 0%;
   font-size: medium;
   text-align: center;
@@ -348,6 +468,7 @@ label {
               2px 3px rgba(46, 101, 70, .2),
               3px 4px rgba(46, 101, 70, .1);
   border: 1px solid rgba(44, 65, 110, 1);
+  border-radius: 12px;
   padding:0%;
   font-size: medium;
   text-align: center;
@@ -376,7 +497,9 @@ label {
 {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(44, 65, 110, 1);
+  border-radius: .5rem;
   padding:0%;
+  margin: 1%;
   text-align: Left;
 }
 .substance-use-table, .past-medical-care-table, .medication-table,.physical-activity-table,.physical-activity-rest-table{
@@ -387,7 +510,7 @@ label {
   text-align: left;
 }
 .family-health-history-table:hover,.medical-history-table:hover,.substance-use-table:hover, .past-medical-care-table:hover, .medication-table:hover,.physical-activity-table:hover,.physical-activity-rest-table:hover{
-  box-shadow: 0 9px 18px rgba(0,0,0, .5);
+  box-shadow: 0 9px 18px rgba(0,0,0, .5) inset;
 }
 
 
@@ -446,5 +569,7 @@ label {
 .social-history-item:hover{
   box-shadow: 0 4px 12px rgba(44, 65, 110, 1) inset;
 }
-
+.social-history-table{
+  color: rgba(44, 65, 110, 1);
+}
 /*________________________________________________________________[ SOCIAL HISTORY SECTION ]________________________________________________________________*/
