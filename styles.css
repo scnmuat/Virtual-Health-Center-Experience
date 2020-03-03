@@ -4,6 +4,52 @@
   --overlay-color: rgba(24,39,51,.85);
   --meun-speed: .75s;
 }
+#nav-bar{
+  background-color:rgba(44, 65, 110, .95);
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  max-height: 2rem;
+}
+#nav-bar-ul{
+  width: 100vw;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem;
+}
+#nav-bar-li{
+  display: inline-block;
+  z-index: 1;
+  justify-content: space-between;
+}
+header{
+  width: 100vw;
+  height: 4.5vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+}
+#push-content{
+  height: 7vh;
+  visibility: hidden;
+}
+#header-title{
+  top: 0;
+  left: 0;
+  border-radius: 0;
+  height: 100%;
+  width: 100%;
+  background-color:rgba(44, 65, 110, .95);
+  align-items: center;
+  justify-content: center;
+}
+
 .mainbodydiv{
     background-color: var(--primary-color);
     background-repeat: repeat-y;
@@ -58,7 +104,7 @@ html {
 {
   display: block;
   width: 100%;
-  background-color: rgba(222, 255, 209, 0.8);
+  background-color: var(--overlay-color);
 }
 h1 {
   color: rgb(255, 255, 255);
@@ -120,7 +166,7 @@ ul li a:hover
   box-shadow: 0 0 25px #000; 
   transform: scaleY(1.1);
   transition: all ease 500ms;
-  color: darkgreen;
+  color: #fff;
   z-index: -1;
 }
 input, select, option{

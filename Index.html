@@ -2,9 +2,45 @@
 <html>
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="menu.css">
 	<title>Virtual Health Center Experience</title>
 </head>
 <body>
+	<header class="">
+		<h1 id="header-title">Virtual Health Center Experience</h1>
+		<nav id="nav-bar">
+			<ul id="nav-bar-ul">
+				<li id="nav-bar-li"><a href="#demographics">DEMOGRAPHICS</a></li>
+				<li id="nav-bar-li"><a href="#anthropometrics">ANTHROPOMETRICS</a></li>
+				<li id="nav-bar-li"><a href="#medicalhistory">MEDICAL HISTORY</a></li>
+				<li id="nav-bar-li"><a href="#familyhistory">FAMILY HISTORY</a></li>
+				<li id="nav-bar-li"><a href="#physicalactivity">PHYSICAL ACTIVITY</a></li>
+				<li id="nav-bar-li"><a href="#nutritionalhistory">NUTRITION HISTORY</a></li>
+				<li id="nav-bar-li" onclick=""><a href="#socialhistory">SOCIAL HISTORY</a></li>
+			  </ul>
+		</nav>
+	  </header>
+	<div class="menu-wrap">
+		<input type="checkbox" class="toggler">
+		<div class="hamburger"><div></div></div>
+		<div class="menu">
+		  <div>
+			<div>
+			  <ul>
+				<li class="lisidebar"><a href="#demographics">DEMOGRAPHICS</a></li>
+				<li class="lisidebar"><a href="#anthropometrics">ANTHROPOMETRICS</a></li>
+				<li class="lisidebar"><a href="#medicalhistory">MEDICAL HISTORY</a></li>
+				<li class="lisidebar"><a href="#familyhistory">FAMILY HISTORY</a></li>
+				<li class="lisidebar"><a href="#physicalactivity">PHYSICAL ACTIVITY</a></li>
+				<li class="lisidebar"><a href="#nutritionalhistory">NUTRITION HISTORY</a></li>
+				<li class="lisidebar" onclick=""><a href="#socialhistory">SOCIAL HISTORY</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div id="push-content"></div>
+	
 <!-- 	<div class="sidebardiv">
 		<nav>
 			<ul class="ulsidebar">
