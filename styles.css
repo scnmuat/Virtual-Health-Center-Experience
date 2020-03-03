@@ -179,14 +179,12 @@ ul li a:hover
 }
 input, select, option{
   display: inline-block;
-  border: none;
   background-color: #fff;
   border: 1px solid rgba(44, 65, 110,.25);
-  padding: 0.75rem 1.5rem;
-  margin-top: 1rem;
-  transition: opacity 1s ease-in;
+  max-height: 4rem;
   border-radius: 5px;
   color:rgba(44, 65, 110, 1);
+  font-size: 1rem;
 }
 input:hover,select:hover, option:hover{
   background-color: var(--primary-color);
