@@ -271,6 +271,9 @@ form
 .demographics-form{
   justify-content: center;
   align-items: center;
+  border: 1px solid rgba(44, 65, 110, 1);
+  border-radius: 12px;
+  margin: 3%;
 }
 #patient-address-title, #patient-demographics-title{
   margin-bottom: 1rem;
@@ -285,17 +288,21 @@ form
   flex: 1;
   justify-content: space-between;
   width: 100%;
+  
 }
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  margin: 0 -16px;
+  margin: 1%;
+  
 }
 .col-50 {
   -ms-flex: 50%; /* IE10 */
   flex: 50%;
+  /* border: 1px solid rgba(44, 65, 110, 1);
+  border-radius: 12px; */
 }
 .icon-container {
   margin-bottom: 20px;
@@ -399,60 +406,6 @@ span.price {
     margin-bottom: 20px;
   }
 }
-/* .addresswrapper
-{
-  flex: 1;
-  padding: 1%;
-  grid-template-areas: 
-  "fname mname lname"
-  "address address address"
-  "city state zipcode"
-  " . email phone";
-  display: grid;
-  justify-content: space-between;
-  margin: auto;
-  column-gap: 1%;
-  row-gap: 1%;
-}
-
-.addresswrapper > fname {
-  grid-area: fname;
-  width:100%;
-}
-.addresswrapper > .mname {
-  grid-area: mname;
-  width:100%;
-}
-.addresswrapper > .lname {
-  grid-area: lname;
-  width:100%;
-}
-.addresswrapper > .address {
-  grid-area: address;
-  width:100%;
-}
-.addresswrapper > .city {
-  grid-area: city;
-  width:100%;
-}
-
-.addresswrapper > .state {
-  grid-area: state;
-  width:100%;
-}
-
-.addresswrapper > .zipcode {
-  grid-area: zipcode;
-  width:100%;
-}
-.addresswrapper > .email {
-  grid-area: email;
-  width:100%;
-}
-.addresswrapper > .phone {
-  grid-area: phone;
-  width:100%;
-} */
 
 
 label {
@@ -556,6 +509,7 @@ label {
   align-content: center;
   text-align: center;
   margin: auto;
+  
 }
 #medical-condition
 {
@@ -569,9 +523,11 @@ label {
   padding:0%;
   margin: 1%;
   text-align: Left;
+  border-radius: 12px;
 }
-.substance-use-table, .past-medical-care-table, .medication-table,.physical-activity-table,.physical-activity-rest-table{
+.substance-use-table, .past-medical-care-table,.family-health-history-table, .medication-table,.physical-activity-table,.physical-activity-rest-table{
   border: 1px solid rgba(44, 65, 110, 1);
+  border-radius: 12px;
 }
 .medical-history-table> label
 {
@@ -633,11 +589,14 @@ label {
   flex-wrap: wrap;
   flex-direction: column;
   margin: .5%;
+  border-radius: 12px;
 }
 .social-history-item:hover{
   box-shadow: 0 4px 12px rgba(44, 65, 110, 1) inset;
 }
 .social-history-table{
   color: rgba(44, 65, 110, 1);
+  border-radius: 12px;
+  
 }
 /*________________________________________________________________[ SOCIAL HISTORY SECTION ]________________________________________________________________*/
