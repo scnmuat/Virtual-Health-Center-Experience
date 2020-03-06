@@ -450,6 +450,7 @@ label {
   flex-wrap: wrap;
   flex-direction: column;
   border-radius: 14px;
+  color: rgba(44, 65, 110, 1);
 }
 .Anthropometrics-item:hover,.grid-item-patient-information:hover{
   box-shadow: 0 4px 12px rgba(44, 65, 110, 1) inset;
@@ -490,6 +491,7 @@ label {
               3px 4px rgba(46, 101, 70, .1);
   border: 1px solid rgba(44, 65, 110, 1);
   border-radius: 12px;
+  color: rgba(44, 65, 110, 1);
   padding:0%;
   font-size: medium;
   text-align: center;
