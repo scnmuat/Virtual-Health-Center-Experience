@@ -198,7 +198,16 @@ input:hover::-webkit-input-placeholder
 {
     color: #fff;
 }
-
+input[type="submit"]{
+  box-sizing: border-box;
+  width: 8rem;
+  height: 2rem;
+  margin: 1rem;
+}
+input[type="checkbox"]{
+  justify-content: center;
+  align-items: center;
+}
 .sidebardiv
 {
   padding: 0%;
@@ -218,9 +227,11 @@ input:hover::-webkit-input-placeholder
 } */
 table
 {
+  box-sizing: border-box;
   margin: auto;
   width: fit-content;
   height: fit-content;
+  flex: 1;
 }
 form
 {
@@ -255,6 +266,7 @@ form
   background-color: white;
   overflow: hidden;
 }
+
 /*________________________________________________________________[ Accordion Styling ]________________________________________________________________*/
 
 /*________________________________________________________________[ GENERAL STYLING ]________________________________________________________________*/
